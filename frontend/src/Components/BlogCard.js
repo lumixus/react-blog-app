@@ -5,7 +5,7 @@ export default function BlogCard(props) {
     const {blog} = props;
     return (
         
-        <div className="blog-list-wrapper">
+        <div className="blog-list-wrapper" key={0}>
         <div className="row">
             <div className="col-md-3 blog-list-img-wrapper"><img className="blog-list-img" src={blog.thumbnail} alt="" /></div>
             <div className="col-md-9">

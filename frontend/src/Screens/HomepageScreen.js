@@ -23,8 +23,8 @@ export default function HomepageScreen() {
                 <hr />
                   {loading ? (<h3>Loading...</h3>) : error ? (<h3>{error}</h3>) : posts.length > 0 ? (<div>
                       {posts.map((p) => 
-                      <Link to={"/post/"+p._id} style={{textDecoration:"none",color:"white"}}>
-                          <BlogCard blog={p} />
+                      <Link key={p._id} to={"/post/"+p._id} style={{textDecoration:"none",color:"white"}}>
+                          <BlogCard blog={p} key={p._id} />
                       </Link>
                       )}
                 

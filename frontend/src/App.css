@@ -260,3 +260,14 @@ body{
 .user-list-row:hover{
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+.navbar-toggler-icon {
+  color : white !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}

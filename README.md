@@ -1,0 +1,1 @@
+Blog app with react, redux, expressjs and mongoDB.

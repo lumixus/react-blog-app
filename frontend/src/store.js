@@ -2,7 +2,7 @@ import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 
 import thunk from "redux-thunk"
 import { categoriesReducer, newCategoryReducer } from "./Reducers/categoryReducers";
-import { postFetchReducers, postReducers, singlePostReducer } from "./Reducers/postReducers";
+import { postFetchReducers, postReducers, postUpdateReducer, singlePostReducer } from "./Reducers/postReducers";
 import { userReducer, userRegisterReducer } from "./Reducers/userReducers";
 const initialState = {
 
@@ -18,7 +18,8 @@ const reducer = combineReducers({
     postFetch : postFetchReducers,
     singlePost : singlePostReducer,
     newCategory : newCategoryReducer,
-    categories : categoriesReducer
+    categories : categoriesReducer,
+    postUpdate : postUpdateReducer
 })
 
 

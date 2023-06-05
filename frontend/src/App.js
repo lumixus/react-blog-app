@@ -11,6 +11,7 @@ import EditorScreen from "./Screens/EditorScreen";
 import NewPostScreen from "./Screens/NewPostScreen";
 import NewCategoryScreen from "./Screens/NewCategoryScreen";
 import PostDetailScreen from "./Screens/PostDetailScreen";
+import EditPostScreen from "./Screens/EditPostScreen";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/new-category" component={NewCategoryScreen} />
       <Route path="/top-posts" component={TopPosts} />
       <Route path="/post/:id?" component={PostDetailScreen} />
+      <Route path="/edit/post/:id?" component={EditPostScreen} />
         
     </div>
   );
